@@ -15,10 +15,13 @@
     color: var(--main-color);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     display: flex;
     justify-content: center;
-    flex-direction: column;
 }
 
 .main-container {
@@ -231,7 +234,7 @@ header img {
     margin-left: 11px;
 }
 
-/****** Hebergements And Populaires ***********/
+/****** Hebergements And Populaires ******/
 
 .hebergements-and-populaires {
     display: flex;
@@ -245,54 +248,68 @@ header img {
     box-sizing: border-box;
 }
 
-/****** Hebergements ***********/
+/****** Hebergements ******/
+
 .hebergements {
     width: 65%;
     display: flex;
+    flex-direction: column;
 }
 
-.hebergements img {
+.hebergementsCards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    margin-top: 30px;
+}
+
+.hebergementsCards .card {
+    flex-grow: 1;
+    width: 30%;
+    background-color: white;
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+
+.hebergementsCards img {
     width: 100%;
     height: 134px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
-.hebergementsCards .card {
-    display: flex;
-    margin-top: 33px;
-}
-
-.hebergementsCards img {
-    width: 33%;
-    height: 134px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-}
-
 .hebergementsCards .card-content {
-    width: 67%;
+    width: 100%;
     padding-left: 15px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
 }
 
-.hebergementsCards .card-title {
-    margin-top: 10px;
-    margin-bottom: 4px;
-}
-
-.hebergementsCards .card-subtitle {
-    margin: 0;
+.hebergementsCards h3 {
+    margin-top: 4px;
+    margin-bottom: 8px;
 }
 
 .hebergementsCards .card-rating {
-    margin-bottom: 5px;
+    margin-top: 8px;
 }
 
-/****** Populaires ***********/
+.hebergements button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: max-content;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+/****** Populaires ******/
+
 .populaires {
     width: 32%;
 }
@@ -337,12 +354,75 @@ header img {
     margin-bottom: 5px;
 }
 
+/****** ACTIVITES MARSEILLE ******/
 
+.activitesMarseille {
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 30px;
+    margin-top: 35px;
+}
 
+.activitesMarseille h2 {
+    margin-bottom: 30px;
+}
+
+.cardActivites .card {
+    width: 22.5%;
+    padding: 0;
+    cursor: pointer;
+}
+
+.cardActivites .card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.cardActivites img {
+    width: 100%;
+    height: 380px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.cardActivites  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/****** FOOTER ******/
+
+footer {
+    background: #F2F2F2;
+    margin-top: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+
+footer div {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px 20px 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    margin-top: 15px;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
-/****** Media queries ***********/
+/****** Media queries ******/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
@@ -379,5 +459,5 @@ header img {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    
 }
