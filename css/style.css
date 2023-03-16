@@ -188,11 +188,16 @@ header img {
 }
 
 .filtresTitle {
-
+    margin-right: 15px;
 }
 
 .groupFiltres {
     display: flex;
+    flex-wrap: wrap;
+}
+
+.groupFiltres input {
+    box-sizing: border-box;
 }
 
 .topFiltresRecherche input {
@@ -464,6 +469,7 @@ footer a {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
     .topFiltresRecherche {
         display: block;
     }
@@ -477,6 +483,29 @@ footer a {
 @media (max-width: 767.98px) {
     .hebergementsCards .card {
         width: 100%;
+    }
+
+    .topPartHebergement {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .groupFiltres {
+        row-gap: 20px;
+        display: flex;
+    }
+
+    .groupFiltres input {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .groupFiltres label {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
     }
 
     .cardActivites {
@@ -497,5 +526,40 @@ footer a {
 
     .main-container {
         padding: 0;
+    }
+
+    header {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+    }
+
+    .hebergements-and-populaires section {
+        background-color: transparent;
+        border-radius: 0;
+        box-sizing: content-box;
+    }
+
+    .hebergements-and-populaires .populaires {
+        background-color: var(--main-bg-color);
+    }
+
+    .hebergements button {
+        background-color: transparent;
+    }
+
+    .activitesMarseille {
+        border-radius: 0;
+        box-sizing: content-box;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        border-radius: 0;
+        box-sizing: content-box;
     }
 }
