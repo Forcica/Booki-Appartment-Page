@@ -548,7 +548,7 @@ footer a {
     }
 
     .topPartHebergement {
-        padding: 0 30px;
+        padding: 0;
     }
 
     .topRechercheAppart #rechercher {
@@ -631,6 +631,7 @@ footer a {
     .activitesMarseille {
         border-radius: 0;
         width: 100%;
+        padding: 0;
     }
 
     footer {
