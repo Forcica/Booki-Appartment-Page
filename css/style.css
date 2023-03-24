@@ -551,12 +551,20 @@ footer a {
         padding: 0;
     }
 
+    .topRechercheAppart {
+        margin: 20px 20px 0 20px;
+    }
+
     .topRechercheAppart #rechercher {
         display: none;
     }
     
     .topRechercheAppart #loupe {
         display: flex;
+    }
+
+    .topHebergementReve {
+        margin: 0 20px;
     }
 
     .groupFiltres {
