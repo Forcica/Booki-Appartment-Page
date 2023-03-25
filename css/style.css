@@ -38,7 +38,6 @@ body {
 .card {
     background-color: white;
     border-radius: 20px;
-    padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
@@ -230,6 +229,10 @@ header img {
     transition: .25s;
 }
 
+.groupFiltres button:hover {
+    background-color: #DEEBFF;
+}
+
 /*** INFOS RECHERCHE ***/
 
 .topInfoRecherche {
@@ -352,6 +355,7 @@ header img {
 .populaires-cards img {
     width: 33%;
     height: 134px;
+    padding: 5px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -381,7 +385,6 @@ header img {
 /****** ACTIVITES MARSEILLE ******/
 
 .activitesMarseille {
-    /* background-color: red; */
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -535,8 +538,9 @@ footer a {
         justify-content: center;
         text-decoration: none;
         color: #000000;
-        padding-top: 14px;
-        border-bottom: solid 2px transparent;
+        margin-top: 25px;
+        padding-bottom: 20px;
+        border-bottom: solid 2px #F2F2F2;
         border-top: transparent;
     }
 
@@ -552,7 +556,7 @@ footer a {
     }
 
     .topRechercheAppart {
-        margin: 20px 20px 0 20px;
+        margin: 30px 20px 0 20px;
     }
 
     .topRechercheAppart #rechercher {
@@ -565,6 +569,14 @@ footer a {
 
     .topHebergementReve {
         margin: 0 20px;
+    }
+
+    .topFiltresRecherche {
+        margin: 30px 20px;
+    }
+
+    .topFiltresRecherche p {
+        margin-bottom: 30px;
     }
 
     .groupFiltres {
@@ -590,12 +602,22 @@ footer a {
         display: flex;
     }
 
+    .topInfoRecherche {
+        margin: 20px;
+    }
+
     .cardActivites {
         flex-direction: column;
+        padding: 0 30px 0 30px;
+    }
+
+    .activitesMarseille h2 {
+        padding-left: 30px;
     }
 
     .cardActivites .card {
         width: 100%;
+        margin-bottom: 15px;
     }
 
     .topRechercheAppart input {
@@ -634,6 +656,7 @@ footer a {
 
     .hebergements button {
         background-color: transparent;
+        margin-top: 0;
     }
 
     .activitesMarseille {
